@@ -1,6 +1,0 @@
-*
-!app/
-!model-pkg/
-!model-pkg/*.whl
-!requirements.txt
-!pyproject.toml

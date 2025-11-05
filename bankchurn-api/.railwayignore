@@ -1,0 +1,19 @@
+*
+!Dockerfile
+!app/
+!app/**
+!model-pkg/
+!model-pkg/**
+!requirements.txt
+!start.sh
+!.railwayignore
+!.python-version
+# Exclusiones generales
+.venv
+.tox
+__pycache__
+.pytest_cache
+.git
+*.pyc
+*.pyo
+

@@ -2,5 +2,9 @@
 # Activar entorno virtual si aplica
 # source .venv/bin/activate
 
-# Ejecutar la API FastAPI con uvicorn
-uvicorn app.main:app --host 0.0.0.0 --port 8000
+if [ -z "$PORT" ]; then
+  PORT=8000
+fi
+
+echo "Starting app on port $PORT..."
+uvicorn app.main:app --host 0.0.0.0 --port $PORT
